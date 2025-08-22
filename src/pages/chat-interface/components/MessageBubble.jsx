@@ -100,15 +100,16 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
     <div className="flex items-start space-x-3 mb-4">
       {/* Character Avatar */}
       <div className={`
-        w-10 h-10 rounded-full ${config?.bgColor} 
-        flex items-center justify-center flex-shrink-0
+        w-10 h-10 rounded-full ${config?.bgColor}
+        flex items-center justify-center flex-shrink-0 relative
         animate-breathing
       `}>
         <Icon
           name={config?.icon}
-          size={16}
+          size={14}
           className={config?.color}
         />
+        <span className="absolute -top-1 -right-1 text-base">{config?.emoji}</span>
       </div>
       {/* Message Content */}
       <div className="flex-1 max-w-xs sm:max-w-md lg:max-w-lg">
