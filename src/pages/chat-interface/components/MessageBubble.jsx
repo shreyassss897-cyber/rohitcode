@@ -7,6 +7,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       heart: {
         name: 'Heart',
         icon: 'Heart',
+        emoji: '❤️',
         color: 'text-red-500',
         bgColor: 'bg-red-50',
         bubbleColor: 'bg-red-100',
@@ -14,7 +15,8 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       liver: {
         name: 'Liver',
-        icon: 'Shield',
+        icon: 'Filter',
+        emoji: '🧽',
         color: 'text-amber-600',
         bgColor: 'bg-amber-50',
         bubbleColor: 'bg-amber-100',
@@ -22,7 +24,8 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       stomach: {
         name: 'Stomach',
-        icon: 'Zap',
+        icon: 'Apple',
+        emoji: '🍽️',
         color: 'text-orange-500',
         bgColor: 'bg-orange-50',
         bubbleColor: 'bg-orange-100',
@@ -30,7 +33,8 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       skin: {
         name: 'Skin',
-        icon: 'Sun',
+        icon: 'Fingerprint',
+        emoji: '🌸',
         color: 'text-pink-500',
         bgColor: 'bg-pink-50',
         bubbleColor: 'bg-pink-100',
@@ -38,11 +42,21 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       kidney: {
         name: 'Kidney',
-        icon: 'Droplets',
+        icon: 'FlaskConical',
+        emoji: '💧',
         color: 'text-blue-500',
         bgColor: 'bg-blue-50',
         bubbleColor: 'bg-blue-100',
         personality: 'Wise Filter Master'
+      },
+      brain: {
+        name: 'Brain',
+        icon: 'Brain',
+        emoji: '🧠',
+        color: 'text-purple-600',
+        bgColor: 'bg-purple-50',
+        bubbleColor: 'bg-purple-100',
+        personality: 'Passionate & Caring'
       }
     };
     return configs?.[characterId] || configs?.heart;
@@ -51,6 +65,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
   const getLifestyleConfig = () => ({
     name: 'Lifestyle Coach',
     icon: 'Sparkles',
+    emoji: '✨',
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
     bubbleColor: 'bg-secondary/20',
@@ -86,15 +101,16 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
     <div className="flex items-start space-x-3 mb-4">
       {/* Character Avatar */}
       <div className={`
-        w-10 h-10 rounded-full ${config?.bgColor} 
-        flex items-center justify-center flex-shrink-0
+        w-10 h-10 rounded-full ${config?.bgColor}
+        flex items-center justify-center flex-shrink-0 relative
         animate-breathing
       `}>
-        <Icon 
-          name={config?.icon} 
-          size={18} 
+        <Icon
+          name={config?.icon}
+          size={14}
           className={config?.color}
         />
+        <span className="absolute -top-1 -right-1 text-base">{config?.emoji}</span>
       </div>
       {/* Message Content */}
       <div className="flex-1 max-w-xs sm:max-w-md lg:max-w-lg">

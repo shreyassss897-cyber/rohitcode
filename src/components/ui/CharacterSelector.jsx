@@ -16,6 +16,7 @@ const CharacterSelector = ({
       name: 'Heart',
       personality: 'Passionate & Caring',
       icon: 'Heart',
+      emoji: '❤️',
       color: 'text-red-500',
       bgColor: 'bg-red-50',
       description: 'Your cardiovascular health guide'
@@ -24,7 +25,8 @@ const CharacterSelector = ({
       id: 'liver',
       name: 'Liver',
       personality: 'Wise & Protective',
-      icon: 'Shield',
+      icon: 'Filter',
+      emoji: '🧽',
       color: 'text-amber-600',
       bgColor: 'bg-amber-50',
       description: 'Your detox and metabolism expert'
@@ -33,7 +35,8 @@ const CharacterSelector = ({
       id: 'stomach',
       name: 'Stomach',
       personality: 'Energetic & Friendly',
-      icon: 'Zap',
+      icon: 'Apple',
+      emoji: '🍽️',
       color: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Your digestion and nutrition buddy'
@@ -42,7 +45,8 @@ const CharacterSelector = ({
       id: 'skin',
       name: 'Skin',
       personality: 'Gentle & Nurturing',
-      icon: 'Sun',
+      icon: 'Fingerprint',
+      emoji: '🌸',
       color: 'text-pink-500',
       bgColor: 'bg-pink-50',
       description: 'Your beauty and protection advisor'
@@ -51,7 +55,8 @@ const CharacterSelector = ({
       id: 'kidney',
       name: 'Kidney',
       personality: 'Calm & Balanced',
-      icon: 'Droplets',
+      icon: 'FlaskConical',
+      emoji: '💧',
       color: 'text-blue-500',
       bgColor: 'bg-blue-50',
       description: 'Your filtration and balance keeper'
@@ -61,6 +66,7 @@ const CharacterSelector = ({
       name: 'Brain',
       personality: 'Intelligent & Analytical',
       icon: 'Brain',
+      emoji: '🧠',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
       description: 'Your cognitive health and mental wellness expert'
@@ -89,12 +95,13 @@ const CharacterSelector = ({
         className="flex items-center space-x-3 px-4 py-3 w-full sm:w-auto min-w-[200px] justify-between"
       >
         <div className="flex items-center space-x-3">
-          <div className={`w-8 h-8 rounded-full ${currentCharacter?.bgColor} flex items-center justify-center animate-breathing`}>
-            <Icon 
-              name={currentCharacter?.icon} 
-              size={16} 
+          <div className={`w-8 h-8 rounded-full ${currentCharacter?.bgColor} flex items-center justify-center animate-breathing relative`}>
+            <Icon
+              name={currentCharacter?.icon}
+              size={12}
               className={currentCharacter?.color}
             />
+            <span className="absolute -top-1 -right-1 text-sm">{currentCharacter?.emoji}</span>
           </div>
           <div className="text-left">
             <p className="font-heading font-semibold text-sm text-foreground">
@@ -146,15 +153,16 @@ const CharacterSelector = ({
                     `}
                   >
                     <div className={`
-                      w-10 h-10 rounded-full ${character?.bgColor} 
-                      flex items-center justify-center
+                      w-10 h-10 rounded-full ${character?.bgColor}
+                      flex items-center justify-center relative
                       ${selectedCharacter === character?.id ? 'animate-pulse-gentle' : 'animate-breathing'}
                     `}>
-                      <Icon 
-                        name={character?.icon} 
-                        size={18} 
+                      <Icon
+                        name={character?.icon}
+                        size={14}
                         className={character?.color}
                       />
+                      <span className="absolute -top-1 -right-1 text-base">{character?.emoji}</span>
                     </div>
                     
                     <div className="flex-1 text-left">
