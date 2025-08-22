@@ -71,8 +71,16 @@ const ChatHeader = ({
           )}
         </div>
 
-        {/* Right Section - Organs Toggle Button and Settings */}
+        {/* Right Section - Mode Toggle (mobile), Organs Toggle Button and Settings */}
         <div className="flex items-center space-x-2">
+          {/* Mode Toggle for Mobile */}
+          <div className="md:hidden">
+            <ModeToggle
+              currentMode={currentMode}
+              onModeChange={onModeChange}
+            />
+          </div>
+
           {/* Organs Chatbot Toggle Button */}
           {currentMode === 'lifestyle' && (
             <Button
@@ -87,7 +95,7 @@ const ChatHeader = ({
               <span className="sm:hidden text-sm font-medium">Organs</span>
             </Button>
           )}
-          
+
           {/* Settings Button */}
           <Button
             variant="ghost"
