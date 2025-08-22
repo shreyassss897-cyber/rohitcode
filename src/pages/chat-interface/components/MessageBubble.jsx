@@ -50,7 +50,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
         color: 'text-purple-600',
         bgColor: 'bg-purple-50',
         bubbleColor: 'bg-purple-100',
-        personality: 'Intelligent & Analytical'
+        personality: 'Passionate & Caring'
       }
     };
     return configs?.[characterId] || configs?.heart;
