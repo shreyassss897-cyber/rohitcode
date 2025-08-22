@@ -24,7 +24,7 @@ const CharacterSelector = ({
       id: 'liver',
       name: 'Liver',
       personality: 'Wise & Protective',
-      icon: 'Shield',
+      icon: 'Filter',
       color: 'text-amber-600',
       bgColor: 'bg-amber-50',
       description: 'Your detox and metabolism expert'
@@ -33,7 +33,7 @@ const CharacterSelector = ({
       id: 'stomach',
       name: 'Stomach',
       personality: 'Energetic & Friendly',
-      icon: 'Zap',
+      icon: 'Apple',
       color: 'text-orange-500',
       bgColor: 'bg-orange-50',
       description: 'Your digestion and nutrition buddy'
@@ -42,7 +42,7 @@ const CharacterSelector = ({
       id: 'skin',
       name: 'Skin',
       personality: 'Gentle & Nurturing',
-      icon: 'Sun',
+      icon: 'Fingerprint',
       color: 'text-pink-500',
       bgColor: 'bg-pink-50',
       description: 'Your beauty and protection advisor'
@@ -51,7 +51,7 @@ const CharacterSelector = ({
       id: 'kidney',
       name: 'Kidney',
       personality: 'Calm & Balanced',
-      icon: 'Droplets',
+      icon: 'FlaskConical',
       color: 'text-blue-500',
       bgColor: 'bg-blue-50',
       description: 'Your filtration and balance keeper'
