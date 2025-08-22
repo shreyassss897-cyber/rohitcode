@@ -14,7 +14,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       liver: {
         name: 'Liver',
-        icon: 'Shield',
+        icon: 'Filter',
         color: 'text-amber-600',
         bgColor: 'bg-amber-50',
         bubbleColor: 'bg-amber-100',
@@ -22,7 +22,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       stomach: {
         name: 'Stomach',
-        icon: 'Zap',
+        icon: 'Apple',
         color: 'text-orange-500',
         bgColor: 'bg-orange-50',
         bubbleColor: 'bg-orange-100',
@@ -30,7 +30,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       skin: {
         name: 'Skin',
-        icon: 'Sun',
+        icon: 'Fingerprint',
         color: 'text-pink-500',
         bgColor: 'bg-pink-50',
         bubbleColor: 'bg-pink-100',
@@ -38,7 +38,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       },
       kidney: {
         name: 'Kidney',
-        icon: 'Droplets',
+        icon: 'FlaskConical',
         color: 'text-blue-500',
         bgColor: 'bg-blue-50',
         bubbleColor: 'bg-blue-100',
