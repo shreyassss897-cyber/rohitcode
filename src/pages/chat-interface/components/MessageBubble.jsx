@@ -7,6 +7,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       heart: {
         name: 'Heart',
         icon: 'Heart',
+        emoji: '❤️',
         color: 'text-red-500',
         bgColor: 'bg-red-50',
         bubbleColor: 'bg-red-100',
@@ -15,6 +16,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       liver: {
         name: 'Liver',
         icon: 'Filter',
+        emoji: '🧽',
         color: 'text-amber-600',
         bgColor: 'bg-amber-50',
         bubbleColor: 'bg-amber-100',
@@ -23,6 +25,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       stomach: {
         name: 'Stomach',
         icon: 'Apple',
+        emoji: '🍽️',
         color: 'text-orange-500',
         bgColor: 'bg-orange-50',
         bubbleColor: 'bg-orange-100',
@@ -31,6 +34,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       skin: {
         name: 'Skin',
         icon: 'Fingerprint',
+        emoji: '🌸',
         color: 'text-pink-500',
         bgColor: 'bg-pink-50',
         bubbleColor: 'bg-pink-100',
@@ -39,6 +43,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       kidney: {
         name: 'Kidney',
         icon: 'FlaskConical',
+        emoji: '💧',
         color: 'text-blue-500',
         bgColor: 'bg-blue-50',
         bubbleColor: 'bg-blue-100',
@@ -47,6 +52,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
       brain: {
         name: 'Brain',
         icon: 'Brain',
+        emoji: '🧠',
         color: 'text-purple-600',
         bgColor: 'bg-purple-50',
         bubbleColor: 'bg-purple-100',
