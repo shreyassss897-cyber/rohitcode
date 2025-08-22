@@ -43,6 +43,14 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
         bgColor: 'bg-blue-50',
         bubbleColor: 'bg-blue-100',
         personality: 'Wise Filter Master'
+      },
+      brain: {
+        name: 'Brain',
+        icon: 'Brain',
+        color: 'text-purple-600',
+        bgColor: 'bg-purple-50',
+        bubbleColor: 'bg-purple-100',
+        personality: 'Intelligent & Analytical'
       }
     };
     return configs?.[characterId] || configs?.heart;
@@ -90,9 +98,9 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
         flex items-center justify-center flex-shrink-0
         animate-breathing
       `}>
-        <Icon 
-          name={config?.icon} 
-          size={18} 
+        <Icon
+          name={config?.icon}
+          size={16}
           className={config?.color}
         />
       </div>
