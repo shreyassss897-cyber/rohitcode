@@ -65,6 +65,7 @@ const MessageBubble = ({ message, isUser, character, mode }) => {
   const getLifestyleConfig = () => ({
     name: 'Lifestyle Coach',
     icon: 'Sparkles',
+    emoji: '✨',
     color: 'text-secondary',
     bgColor: 'bg-secondary/10',
     bubbleColor: 'bg-secondary/20',
